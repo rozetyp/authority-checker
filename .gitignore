@@ -1,0 +1,14 @@
+# Project handover documentation (private)
+HANDOVER_AUTHORITY_CHECKER.md
+
+# macOS
+.DS_Store
+
+# Development
+*.zip
+node_modules/
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
