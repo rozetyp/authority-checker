@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Reliable DA Checker</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { color: #10B981; }
+        h2 { color: #111827; margin-top: 30px; }
+        .updated { color: #6B7280; font-size: 14px; }
+        a { color: #10B981; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for Reliable DA Checker</h1>
+    <p class="updated">Last updated: January 4, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Reliable DA Checker is a privacy-first Chrome Extension. We do NOT collect, store, or transmit any user data to our servers. <strong>We have no servers.</strong></p>
+
+    <h2>What We Collect</h2>
+    <p><strong>Nothing.</strong> This extension does not collect any personal information, browsing history, or usage data.</p>
+
+    <h2>What Stays Local (On Your Device)</h2>
+    <ul>
+        <li>Your Moz API credentials (Access ID and Secret Key)</li>
+        <li>Your license activation code</li>
+        <li>URLs you check for DA/PA metrics</li>
+    </ul>
+    <p>All data is stored locally in your browser using Chrome's <code>chrome.storage.sync</code> API. This data syncs across your Chrome browsers if you're signed into Chrome, but it never reaches our servers.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>This extension makes direct API calls from your browser to <strong>Moz's servers</strong> (lsapi.seomoz.com) using YOUR API credentials.</p>
+    <p>Please review Moz's privacy policy: <a href="https://moz.com/privacy" target="_blank">https://moz.com/privacy</a></p>
+
+    <h2>Payment Processing</h2>
+    <p>License purchases are processed through <strong>Stripe</strong>. We do not store your payment information. Stripe's privacy policy: <a href="https://stripe.com/privacy" target="_blank">https://stripe.com/privacy</a></p>
+
+    <h2>Permissions Explained</h2>
+    <ul>
+        <li><strong>activeTab:</strong> Required to read the current tab's URL to fetch DA/PA metrics for the domain you're viewing.</li>
+        <li><strong>storage:</strong> Required to save your Moz API credentials and activation code locally in your browser.</li>
+        <li><strong>host_permissions (lsapi.seomoz.com):</strong> Required to make authenticated API requests to Moz's Link API.</li>
+    </ul>
+
+    <h2>Open Source & Transparency</h2>
+    <p>Our code is fully auditable and open source. You can verify exactly what this extension does:</p>
+    <p><a href="https://github.com/rozetyp/authority-checker" target="_blank">https://github.com/rozetyp/authority-checker</a></p>
+
+    <h2>Security</h2>
+    <p>Your Moz Secret Key never leaves your machine. All API request signatures are generated locally using the Web Crypto API (<code>crypto.subtle</code>) with HMAC-SHA1.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We will update this policy if our privacy practices change. The "Last updated" date at the top will reflect when changes were made.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns? Open an issue on GitHub: <a href="https://github.com/rozetyp/authority-checker/issues" target="_blank">https://github.com/rozetyp/authority-checker/issues</a></p>
+</body>
+</html>
